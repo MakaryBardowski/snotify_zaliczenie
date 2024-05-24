@@ -8,8 +8,18 @@ Docker Desktop (uruchomiony)
 
 sposób odpalania
 
-
->>> cd <sciezka do folderu>
->>> docker compose up
+      cd <sciezka_do_folderu>
+      docker compose up
 
 należy odczekać aż logi przestaną się pojawiać (aplikacja zbuduje się w pełni)
+
+Aplikacja składa się z 3 kontenerów:
+1) frontend
+2) backend
+3) baza danych
+
+opis projektu jest dostępny z poziomu podstrony loginu:
+
+     localhost:3000
+
+Po wyszukaniu danego adresu z poziomu przeglądarki nastąpi automatyczne przekierowanie na localhost:3000/login
