@@ -7,7 +7,7 @@ Wymagania:
 Docker Desktop (uruchomiony)
 
 sposób odpalania
-      git clone 
+      git clone https://github.com/MakaryBardowski/snotify_zaliczenie.git
       cd <sciezka_do_folderu_z_plikiem_compose.yaml>
       docker compose up
 
