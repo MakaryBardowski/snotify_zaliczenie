@@ -23,4 +23,8 @@ opis projektu jest dostępny z poziomu podstrony loginu:
 
      localhost:3000
 
+<<<<<<< HEAD
 Po wyszukaniu danego adresu z poziomu przeglądarki nastąpi automatyczne przekierowanie na localhost:3000/login
+=======
+Po wyszukaniu danego adresu z poziomu przeglądarki nastąpi automatyczne przekierowanie na localhost:3000/login
+>>>>>>> b6eda8cb0a6704a61e0c87b36b57e403f54e172e
