@@ -1,0 +1,29 @@
+services:
+  frontend:
+    build: ./zaliczenie_front
+    ports:
+    #bindujemy port exposowany z dockerfila frontendu do portu hosta 3000
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: on-failure
+    
+  backend:
+    build: ./zaliczenie_back_db
+    ports: # ogólnie powinno być 'expose' -exposujemy w sieci dokerowej, ale nie dla hosta (nie dostaniemy sie z przegladarki na endpoint z backendu, tylko przez front)
+      - "8080:8080"
+
+    restart: on-failure
+
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: pass
+      MYSQL_DATABASE: music_db
+    
+    ports:
+      - "3306:3306"
+
+
+
