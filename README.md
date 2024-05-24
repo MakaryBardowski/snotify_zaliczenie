@@ -6,7 +6,8 @@ Aplikacja jest zabezpieczona (frontend + backend)
 Wymagania:
 Docker Desktop (uruchomiony)
 
-sposób odpalania
+sposób uruchamiania:
+
       git clone https://github.com/MakaryBardowski/snotify_zaliczenie.git
       cd <sciezka_do_folderu_z_plikiem_compose.yaml>
       docker compose up
