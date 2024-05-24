@@ -7,8 +7,8 @@ Wymagania:
 Docker Desktop (uruchomiony)
 
 sposób odpalania
-
-      cd <sciezka_do_folderu>
+      git clone 
+      cd <sciezka_do_folderu_z_plikiem_compose.yaml>
       docker compose up
 
 należy odczekać aż logi przestaną się pojawiać (aplikacja zbuduje się w pełni)
