@@ -23,8 +23,23 @@ opis projektu jest dostępny z poziomu podstrony loginu:
 
      localhost:3000
 
-<<<<<<< HEAD
 Po wyszukaniu danego adresu z poziomu przeglądarki nastąpi automatyczne przekierowanie na localhost:3000/login
-=======
-Po wyszukaniu danego adresu z poziomu przeglądarki nastąpi automatyczne przekierowanie na localhost:3000/login
->>>>>>> b6eda8cb0a6704a61e0c87b36b57e403f54e172e
+
+"login" przyjmuje dowolną nazwę użytkownika i dowolne hasło. 
+Po "zalogowaniu" metodą POST wysyłana jest nazwa użytkownika, a backend zapisuje tę nazwę oraz datę zalogowania do bazy danych
+
+dostępne endpointy
+      http://localhost:8080/albums/remote/<id_albumu_z_jsonplaceholder> --- GET (backend wysyła requesta do jsonplaceholder i zwraca wynik)
+
+      http://localhost:8080/albums/<id_albumu_z_bazy_danych_backendu> --- GET (pokazuje album o wybranym id z bazy danych, mamy 12 albumow)
+
+      http://localhost:8080/albums/all --- GET (pokazuje wszystkie albumy z bazy danych)
+
+      http://localhost:8080/utility/author --- GET (zwraca imie i nazwisko autora)
+
+      http://localhost:8080/utility/eventHistory --- GET (zwraca historie logowania)
+
+      http://localhost:8080/utility/saveLogin --- POST (zapisuje login, wyciągając nazwę użytkownika z ciała requesta. Data brana jest po stronie backendu w momencie alokacji pamieci dla zapisywanego obiektu)
+
+
+
