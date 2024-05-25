@@ -29,6 +29,7 @@ Po wyszukaniu danego adresu z poziomu przeglądarki nastąpi automatyczne przeki
 Po "zalogowaniu" metodą POST wysyłana jest nazwa użytkownika, a backend zapisuje tę nazwę oraz datę zalogowania do bazy danych
 
 dostępne endpointy
+
       http://localhost:8080/albums/remote/<id_albumu_z_jsonplaceholder> --- GET (backend wysyła requesta do jsonplaceholder i zwraca wynik)
 
       http://localhost:8080/albums/<id_albumu_z_bazy_danych_backendu> --- GET (pokazuje album o wybranym id z bazy danych, mamy 12 albumow)
