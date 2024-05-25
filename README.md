@@ -1,7 +1,5 @@
 # snotify_zaliczenie
 zaliczenie - aplikacja snotify
-Aplikacja używa POST-a do zapisywania historii przy "zalogowaniu"
-Aplikacja jest zabezpieczona (frontend + backend)
 
 Wymagania:
 Docker Desktop (uruchomiony)
@@ -27,6 +25,8 @@ Po wyszukaniu danego adresu z poziomu przeglądarki nastąpi automatyczne przeki
 
 "login" przyjmuje dowolną nazwę użytkownika i dowolne hasło. 
 Po "zalogowaniu" metodą POST wysyłana jest nazwa użytkownika, a backend zapisuje tę nazwę oraz datę zalogowania do bazy danych
+
+Aplikacja jest zabezpieczona  (wybiórczo, frontend + backend).
 
 dostępne endpointy
 
