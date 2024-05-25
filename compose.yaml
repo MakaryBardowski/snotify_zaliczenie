@@ -5,7 +5,9 @@ services:
     #bindujemy port exposowany z dockerfila frontendu do portu hosta 3000
       - "3000:80"
     depends_on:
-      - backend
+          - backend
+      # backend:
+        # condition: service_healthy
     restart: on-failure
     
   backend:
@@ -14,7 +16,13 @@ services:
       - "8080:8080"
 
     restart: on-failure
-
+    # healthcheck: 
+    #   test: ["CMD","curl 127.0.0.1:8080 || exit 1"]
+    #   interval: 10s # uruchamiamy test co 10s 
+    #   retries: 100  # 100 sprawdzen czy backend juz dziala, jak nie to front sie nie postawi
+    #   timeout: 10s # jesli sam test zajmie wiecej niz 10 sekund to ta proba uznawana jest za faila
+    #   start_period: 240s # probujemy postawic po 240s (healthchecki sie odbywaja, --- jesli bedzie fail to nie liczy sie do retries, a jesli
+    #   # bedzie healthy to juz postawi front)
   db:
     image: mysql:latest
     restart: always
