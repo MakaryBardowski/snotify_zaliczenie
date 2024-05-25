@@ -40,6 +40,3 @@ dostępne endpointy
       http://localhost:8080/utility/eventHistory --- GET (zwraca historie logowania)
 
       http://localhost:8080/utility/saveLogin --- POST (zapisuje login, wyciągając nazwę użytkownika z ciała requesta. Data brana jest po stronie backendu w momencie alokacji pamieci dla zapisywanego obiektu)
-
-
-
